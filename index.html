@@ -39,8 +39,27 @@
         console.log(check1);
         const check2=names.includes("prapti");
         console.log(check2);
-        
 
+        //check type
+        const type1=typeof(names);
+        console.log(`By typeof method the type of names is ${type1}.`);
+        const type2=Array.isArray(names);
+        console.log(`Array.isArray method tells that names is array by stating ${type2}.`);
+        //reverse
+        names.reverse();
+        console.log("The reversed array is",names);
+        //sort ascending
+        names.sort();
+        console.log(names);
+        //sort descending
+        names.sort().reverse();
+        console.log(names);
+        //join
+        let names1=names.join();
+        console.log(names1);
+        //changing seprator in join
+        let names2=names.join("#");
+        console.log(names2);
 
     </script>
 </body>
