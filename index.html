@@ -24,7 +24,23 @@
         //unshift
         names.unshift("prapti");
         console.log("after unshift",names);
+
+        //indexof
+        const index=names.indexOf("aditi");
+        console.log(`The index of'aditi' is ${index}`);
+        //splice remove elements
+        names.splice(2,4);
+        console.log(names);
+        //splice add elements
+        names.splice(2,0,"darshika","aniket","yash","aditi");
+        console.log(names);   
+        //includes test cases
+        const check1=names.includes("neha");
+        console.log(check1);
+        const check2=names.includes("prapti");
+        console.log(check2);
         
+
 
     </script>
 </body>
